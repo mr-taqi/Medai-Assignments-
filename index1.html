@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medai Assignment-1</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fe0303;
+            color: white;
+        }
+
+        #infobox {
+            width: 200px;
+            height: 200px;
+            background-color: #ae2e30;
+            padding: 20px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        button:hover{
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button>Click Me</button>
+
+    <div id="infobox">
+        this is the Info
+    </div>
+</body>
+
+</html>
