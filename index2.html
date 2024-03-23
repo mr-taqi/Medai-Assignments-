@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Layout</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shojumaru&family=ZCOOL+KuaiLe&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        footer {
+            max-width: 1350px;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-areas:
+                "first second"
+                "third third";
+        }
+
+        footer>div {
+            width: 100%;
+            height: 350px;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        footer>div:nth-of-type(1) {
+            grid-area: first;
+            background-color: #02026f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer>div:nth-of-type(2) {
+            grid-area: second;
+            background-color: #3140af;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer>div:nth-of-type(2)>div {
+            display: flex;
+            margin-top: 2%;
+            margin-left: 4%;
+            flex-direction: column;
+        }
+
+        footer>div:nth-of-type(2)>div>span {
+            color: white;
+            padding: 8px;
+        }
+
+        footer>div:nth-of-type(3) {
+            width: 100%;
+            height: 70px;
+            grid-area: third;
+            background-color: #222222;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        footer>div:nth-of-type(3)>div>img {
+            margin: 20px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .mid>span {
+            transform: scale(0.8);
+        }
+
+        .mid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer>div:nth-of-type(3)>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        footer>div:nth-of-type(3)>div:nth-of-type(2) {
+            gap: 20px;
+            padding: 25px;
+        }
+
+        span {
+            text-transform: capitalize;
+        }
+
+        footer>div:nth-of-type(2)>div>span:nth-of-type(1) {
+            font-weight: 800;
+            margin-bottom: 2%;
+        }
+
+        @media (max-width: 880px) {
+            footer{
+                display: grid;
+                grid-template-areas:
+                "second"
+                "first"
+                "third";
+            }
+
+            footer>div:nth-of-type(3)>div:nth-of-type(1) {
+            display: none;
+            }
+
+            footer>div:nth-of-type(3)>div:nth-of-type(2) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+
+            footer>div:nth-of-type(3)>div:nth-of-type(2) {
+                font-size: 10px;
+                font-weight: 700;
+                gap: 20px;
+            }
+        }
+
+
+        @media (max-width: 440px) {
+            footer{
+                display: grid;
+                grid-template-areas:
+                "third"
+                "second"
+                "first";
+            }
+
+            footer>div:nth-of-type(2){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            footer>div:nth-of-type(2)>div>span:nth-of-type(1){
+                display: block;
+            }
+
+
+            footer>div:nth-of-type(2)>div>span{
+                display: none;
+            }
+
+            footer>div:nth-of-type(3)>div:nth-of-type(1) {
+            display: none;
+            }
+
+            footer>div:nth-of-type(3)>div:nth-of-type(2) {
+                font-size: 8px;
+                font-weight: 100;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div>
+            <img title="Logo" src="logo.png" alt="" />
+        </div>
+        <div>
+            <div>
+                <span>Shop</span>
+                <span>gift carts</span>
+                <span>easy REgistry</span>
+                <span>sitemap</span>
+                <span>etsy blog</span>
+                <span>etsy united kingdom</span>
+                <span>etsy germany</span>
+                <span>etsy canada</span>
+            </div>
+            <div>
+                <span>sell</span>
+                <span>sell on etsy</span>
+                <span>teams</span>
+                <span>forums</span>
+                <span>affiliates & creators</span>
+            </div>
+            <div>
+                <span>About</span>
+                <span>etsy, inc</span>
+                <span>policies</span>
+                <span>investors</span>
+                <span>careers</span>
+                <span>press</span>
+                <span>impact</span>
+                <span>ligal imprit</span>
+            </div>
+            <div>
+                <span>Shop</span>
+                <span>gift carts</span>
+                <span>easy REgistry</span>
+                <span>sitemap</span>
+                <span>etsy blog</span>
+                <span>etsy united kingdom</span>
+                <span>etsy germany</span>
+                <span>etsy canada</span>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <img title="Indian Flag"
+                    src="data:image/png;base64,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"
+                    alt="flag" />
+
+                <p class="mid">
+                    India | English (IND) |
+                <pre class="mid"><span class="material-symbols-outlined">
+                        currency_rupee
+                        </span></pre>(INR)
+                </p>
+            </div>
+            <div>
+                <span>2024 Etsy, Inc.</span>
+                <span>terms of Use</span>
+                <span>Privacy</span>
+                <span>Interest-based ads</span>
+                <span>Local shops</span>
+                <span>Regions</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
